@@ -92,3 +92,16 @@ body {
     color: #aebbd0;
     line-height: 1.6;
 }
+
+/* Search Bar */
+.category-search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 550px;
+    margin: 30px auto 15px;
+    padding: 15px 20px;
+    background-color: #102544;
+    border: 1px solid #24466e;
+    border-radius: 8px;
+}
