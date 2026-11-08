@@ -158,3 +158,53 @@ body {
     object-fit: contain;
     border-radius: 30px;
 }
+
+/* Categories Section */
+.categories {
+    padding: 55px 7%;
+    text-align: center;
+    background-color: #091a35;
+}
+
+.categories h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    color: #aebbd0;
+    margin-bottom: 35px;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.category-card {
+    background-color: #102544;
+    border: 1px solid #1c365a;
+    border-radius: 12px;
+    padding: 30px 15px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.category-card i {
+    font-size: 35px;
+    color: #1685ff;
+    margin-bottom: 18px;
+}
+
+.category-card h3 {
+    font-size: 16px;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    background-color: #17365e;
+    border-color: #1685ff;
+}
+
