@@ -76,3 +76,85 @@ body {
     background-color: #087cff;
     color: white;
 }
+/* Hero Section */
+.hero {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 7%;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 5px;
+}
+
+.hero-content h2 {
+    color: #42baff;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: #c4d0e2;
+    line-height: 1.7;
+    max-width: 450px;
+    font-size: 15px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.explore-btn,
+.demo-btn {
+    text-decoration: none;
+    padding: 13px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.explore-btn {
+    background-color: #087cff;
+    color: white;
+}
+
+.demo-btn {
+    color: white;
+    border: 1px solid #8293ad;
+}
+
+.explore-btn:hover,
+.start-btn:hover {
+    background-color: #005bc4;
+}
+
+.demo-btn:hover,
+.login-btn:hover {
+    background-color: #142b4d;
+}
+
+
+/* Engine Image */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 480px;
+    height: 350px;
+    object-fit: contain;
+    border-radius: 30px;
+}
