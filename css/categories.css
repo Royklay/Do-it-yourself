@@ -105,3 +105,25 @@ body {
     border: 1px solid #24466e;
     border-radius: 8px;
 }
+
+.category-search i {
+    color: #1685ff;
+}
+
+.category-search input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+}
+
+.category-search input::placeholder {
+    color: #8293ad;
+}
+
+.search-count {
+    font-size: 13px;
+}
+
