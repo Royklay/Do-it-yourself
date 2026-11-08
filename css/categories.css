@@ -197,3 +197,42 @@ body {
 .category-info a:hover {
     color: white;
 }
+
+/* No Results */
+#noResults {
+    display: none;
+    text-align: center;
+    color: #aebbd0;
+    margin-top: 35px;
+    font-size: 15px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 850px) {
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .category-header h1 {
+        font-size: 28px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .categories-container {
+        padding: 25px 5% 50px;
+    }
+
+    .category-image {
+        height: 210px;
+    }
+
+}

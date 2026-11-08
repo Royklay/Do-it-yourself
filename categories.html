@@ -1,216 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Do It Yourself</title>
-    <link rel="stylesheet" href="css/categories.css">
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/categories.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <script src="js/categories.js" defer></script>
-</head>
-<body>
-     <!-- Navigation Bar -->
+  </head>
+  <body>
+    <!-- Navigation Bar -->
     <header>
-        <nav class="navbar">
-           <div class="logo">
-             <i class="fa-solid fa-screwdriver-wrench"></i>
-                <span>Do It Yourself</span>
-           </div>
-               
-
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="categories.html" class="active">Categories</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="help.html">Help</a></li>
-            </ul>
-
-            <div class="nav-buttons">
-                <a href="login.html" class="login-btn">Sign In</a>
-                <a href="signup.html" class="start-btn">Get Started</a>
-            </div>
-
-        </nav>
-    </header>
-
-      <!-- Categories Header -->
-    <section class="categories-header">
-
-        <h1>Explore Categories</h1>
-
-        <p>
-            Find your device and discover simple ways
-            to solve common problems.
-        </p>
-
-     <!-- Search Bar -->
-        <div class="category-search">
-
-            <i class="fa-solid fa-magnifying-glass"></i>
-
-            <input
-                type="text"
-                id="searchInput"
-                placeholder="Search for a device or category..."
-            >
-
+      <nav class="navbar">
+        <div class="logo">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <span>Do It Yourself</span>
         </div>
 
-        <p id="searchCount" class="search-count">
-            Showing all categories
-        </p>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html" class="active">Categories</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
 
+        <div class="nav-buttons">
+          <a href="login.html" class="login-btn">Sign In</a>
+          <a href="signup.html" class="start-btn">Get Started</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Categories Header -->
+    <section class="categories-header">
+      <h1>Explore Categories</h1>
+
+      <p>Find your device and discover simple ways to solve common problems.</p>
+
+      <!-- Search Bar -->
+      <div class="category-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search for a device or category..."
+        />
+      </div>
+
+      <p id="searchCount" class="search-count">Showing all categories</p>
     </section>
 
     <!-- Categories -->
     <section class="categories-container">
+      <div class="category-grid" id="categoryGrid">
+        <!-- Cars -->
+        <div class="category-card" data-category="cars car vehicle">
+          <div class="category-image">
+            <img src="images/car.jpg" alt="Cars" />
+          </div>
 
-        <div class="category-grid" id="categoryGrid">
+          <div class="category-info">
+            <h3>Cars</h3>
 
+            <p>
+              Learn how to handle common car problems and basic maintenance.
+            </p>
 
-            <!-- Cars -->
-            <div class="category-card" data-category="cars car vehicle">
-
-                <div class="category-image">
-                    <img src="images/car.jpg" alt="Cars">
-                </div>
-
-                <div class="category-info">
-                    <h3>Cars</h3>
-
-                    <p>
-                        Learn how to handle common car problems
-                        and basic maintenance.
-                    </p>
-
-                    <a href="repair.html?category=cars">
-                        Explore <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-
-            </div>
-
-
-            <!-- Computers -->
-            <div class="category-card" data-category="computers computer laptop pc">
-
-                <div class="category-image">
-                    <img src="images/computer.jpg" alt="Computers">
-                </div>
-
-                <div class="category-info">
-                    <h3>Computers</h3>
-
-                    <p>
-                        Troubleshoot common PC and laptop
-                        problems with simple guides.
-                    </p>
-
-                    <a href="repair.html?category=computers">
-                        Explore <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-
-            </div>
-
-
-            <!-- Mouse -->
-            <div class="category-card" data-category="mouse computer mouse">
-
-                <div class="category-image">
-                    <img src="images/mouse.jpg" alt="Computer Mouse">
-                </div>
-
-                <div class="category-info">
-                    <h3>Mouse</h3>
-
-                    <p>
-                        Fix common mouse connection and
-                        functionality problems.
-                    </p>
-
-                    <a href="repair.html?category=mouse">
-                        Explore <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-
-            </div>
-
-
-            <!-- Keyboard -->
-            <div class="category-card" data-category="keyboard keys typing">
-
-                <div class="category-image">
-                    <img src="images/keyboard.jpg" alt="Keyboard">
-                </div>
-
-                <div class="category-info">
-                    <h3>Keyboard</h3>
-
-                    <p>
-                        Learn how to solve common keyboard
-                        and typing issues.
-                    </p>
-
-                    <a href="repair.html?category=keyboard">
-                        Explore <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-
-            </div>
-
-
-            <!-- Printers -->
-            <div class="category-card" data-category="printers printer printing">
-
-                <div class="category-image">
-                    <img src="images/printer.jpg" alt="Printers">
-                </div>
-
-                <div class="category-info">
-                    <h3>Printers</h3>
-
-                    <p>
-                        Understand common printing and
-                        connection problems.
-                    </p>
-
-                    <a href="repair.html?category=printers">
-                        Explore <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-
-            </div>
-
-
-            <!-- Bicycles -->
-            <div class="category-card" data-category="bicycles bicycle bike">
-
-                <div class="category-image">
-                    <!-- Add your bicycle image here -->
-                    <img src="images/bicycle.jpg" alt="Bicycles">
-                </div>
-
-                <div class="category-info">
-                    <h3>Bicycles</h3>
-
-                    <p>
-                        Find simple solutions for common
-                        bicycle problems.
-                    </p>
-
-                    <a href="repair.html?category=bicycles">
-                        Explore <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-
-            </div>
-
+            <a href="repair.html?category=cars">
+              Explore <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
 
+        <!-- Computers -->
+        <div class="category-card" data-category="computers computer laptop pc">
+          <div class="category-image">
+            <img src="images/computer.jpg" alt="Computers" />
+          </div>
 
+          <div class="category-info">
+            <h3>Computers</h3>
 
+            <p>
+              Troubleshoot common PC and laptop problems with simple guides.
+            </p>
 
-</body>
+            <a href="repair.html?category=computers">
+              Explore <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Mouse -->
+        <div class="category-card" data-category="mouse computer mouse">
+          <div class="category-image">
+            <img src="images/mouse.jpg" alt="Computer Mouse" />
+          </div>
+
+          <div class="category-info">
+            <h3>Mouse</h3>
+
+            <p>Fix common mouse connection and functionality problems.</p>
+
+            <a href="repair.html?category=mouse">
+              Explore <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Keyboard -->
+        <div class="category-card" data-category="keyboard keys typing">
+          <div class="category-image">
+            <img src="images/keyboard.jpg" alt="Keyboard" />
+          </div>
+
+          <div class="category-info">
+            <h3>Keyboard</h3>
+
+            <p>Learn how to solve common keyboard and typing issues.</p>
+
+            <a href="repair.html?category=keyboard">
+              Explore <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Printers -->
+        <div class="category-card" data-category="printers printer printing">
+          <div class="category-image">
+            <img src="images/printer.jpg" alt="Printers" />
+          </div>
+
+          <div class="category-info">
+            <h3>Printers</h3>
+
+            <p>Understand common printing and connection problems.</p>
+
+            <a href="repair.html?category=printers">
+              Explore <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bicycles -->
+        <div class="category-card" data-category="bicycles bicycle bike">
+          <div class="category-image">
+            <img src="images/bicycle.jpg" alt="Bicycles" />
+          </div>
+
+          <div class="category-info">
+            <h3>Bicycles</h3>
+
+            <p>Find simple solutions for common bicycle problems.</p>
+
+            <a href="repair.html?category=bicycles">
+              Explore <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- No Results Message -->
+      <p id="noResults">No categories found. Try another search.</p>
+    </section>
+  </body>
 </html>
