@@ -111,7 +111,13 @@ const problems = {
     );
 
     marker.add(ring);
+ // Add light around the marker
+    const glow = new THREE.PointLight(color, 2, radius * 12);
+    marker.add(glow);
 
+    marker.visible = false;
+
+    return marker;
 
 
 // Load the engine model
