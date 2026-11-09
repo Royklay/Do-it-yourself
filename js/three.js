@@ -143,3 +143,10 @@ document.getElementById("zoomInBtn").addEventListener("click", function () {
     controls.update();
 
 });
+// Zoom out button
+document.getElementById("zoomOutBtn").addEventListener("click", function () {
+
+    camera.position.multiplyScalar(1.2);
+    controls.update();
+
+});
