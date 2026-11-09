@@ -7,3 +7,10 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 const viewer = document.getElementById("engine-viewer");
 // Create the 3D scene
 const scene = new THREE.Scene();
+// Create the camera
+const camera = new THREE.PerspectiveCamera(
+    45,
+    viewer.clientWidth / viewer.clientHeight,
+    0.1,
+    1000
+);
