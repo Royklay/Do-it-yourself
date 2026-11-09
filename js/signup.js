@@ -6,3 +6,8 @@ const signupMessage = document.getElementById("signupMessage");
 signupForm.addEventListener("submit", function (event) {
      // Stop the page from refreshing automatically
     event.preventDefault();
+      // Get the values entered by the user
+    const fullName = document.getElementById("fullName").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
