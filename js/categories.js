@@ -8,3 +8,6 @@ const noResults = document.getElementById("noResults");
 const clearSearch = document.getElementById("clearSearch");
 // Search Categories
 searchInput.addEventListener("input", function() {
+// Get what the user has typed
+ const searchValue = searchInput.value.toLowerCase().trim();
+  let foundCategories = 0;
