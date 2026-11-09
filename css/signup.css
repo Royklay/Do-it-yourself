@@ -86,3 +86,25 @@ body {
     padding: 40px;
     gap: 50px;
 }
+
+/* Left side of the page */
+.auth-image {
+    width: 40%;
+    text-align: center;
+    padding: 40px;
+}
+
+.auth-image i {
+    font-size: 90px;
+    color: #168cff;
+    margin-bottom: 25px;
+}
+
+.auth-image h1 {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.auth-image p {
+    color: #b8c9e8;
+}
