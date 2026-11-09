@@ -14,3 +14,12 @@ const camera = new THREE.PerspectiveCamera(
     0.1,
     1000
 );
+// Create the renderer
+const renderer = new THREE.WebGLRenderer({
+    antialias: true,
+    alpha: true
+});
+
+renderer.setSize(viewer.clientWidth, viewer.clientHeight);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.outputColorSpace = THREE.SRGBColorSpace;
