@@ -15,3 +15,16 @@ searchInput.addEventListener("input", function() {
     categoryCards.forEach(function(card) {
      // Get the category name and keywords
         const categoryName = card.dataset.category;
+    // Check if the search matches
+        if (categoryName.includes(searchValue)) {
+
+            card.style.display = "block";
+            foundCategories++;
+
+        } else {
+
+            card.style.display = "none";
+
+        }
+
+    });
