@@ -29,9 +29,5 @@ signupForm.addEventListener("submit", function (event) {
         email: email,
         password: password
     };
-  // Put the user's details into an object
-    const user = {
-        fullName: fullName,
-        email: email,
-        password: password
-    };
+ // Save the user's details in the browser
+    localStorage.setItem("fixitUser", JSON.stringify(user));
