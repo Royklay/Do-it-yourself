@@ -28,3 +28,17 @@ searchInput.addEventListener("input", function() {
         }
 
     });
+
+// Show message if nothing matches
+    if (foundCategories === 0) {
+
+        noResults.style.display = "block";
+
+    } else {
+
+        noResults.style.display = "none";
+
+    }
+
+});
+
