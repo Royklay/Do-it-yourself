@@ -108,3 +108,21 @@ loader.load(
             }
 
         });
+   // Remove the loading message
+        loadingMessage.remove();
+
+        console.log("Engine loaded successfully!");
+
+    },
+
+    undefined,
+
+    function (error) {
+
+        loadingMessage.textContent =
+            "Could not load the engine. Check the model file path.";
+
+        console.error("Error loading engine:", error);
+
+    }
+);
