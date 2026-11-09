@@ -6,3 +6,5 @@ const categoryCards = document.querySelectorAll(".category-card");
 const noResults = document.getElementById("noResults");
 // Get the clear button
 const clearSearch = document.getElementById("clearSearch");
+// Search Categories
+searchInput.addEventListener("input", function() {
