@@ -159,3 +159,14 @@ window.addEventListener("resize", function () {
     renderer.setSize(viewer.clientWidth, viewer.clientHeight);
 
 });
+// Keep the 3D scene moving
+function animate() {
+
+    requestAnimationFrame(animate);
+
+    controls.update();
+    renderer.render(scene, camera);
+
+}
+
+animate();
