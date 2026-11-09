@@ -151,3 +151,109 @@ body {
     background: #0866e9;
     box-shadow: 0 0 12px rgba(0, 110, 255, 0.5);
 }
+
+/* Problem Section */
+.problem-section {
+    background: #0b2042;
+    border: 1px solid #193d70;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(0, 110, 255, 0.12);
+}
+
+.problem-section h2 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.problem-section p {
+    color: #b8c9e8;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Problem Search */
+#problemSearch {
+    width: 100%;
+    padding: 13px;
+    background: #071831;
+    border: 1px solid #28518a;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+#problemSearch:focus {
+    border-color: #168cff;
+    box-shadow: 0 0 8px rgba(22, 140, 255, 0.3);
+}
+
+#problemSearch::placeholder {
+    color: #8297b8;
+}
+
+/* Search Button */
+#searchProblem {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #0866e9;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#searchProblem:hover {
+    background: #168cff;
+}
+
+/* Problem Information */
+#problemInformation {
+    margin-top: 25px;
+    padding: 18px;
+    background: #071831;
+    border: 1px solid #193d70;
+    border-radius: 10px;
+}
+
+#problemInformation h3 {
+    color: #54baff;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+#problemInformation p {
+    margin-bottom: 20px;
+}
+
+/* Smaller Screens */
+@media (max-width: 850px) {
+    .repair-container {
+        grid-template-columns: 1fr;
+    }
+
+    #engine-viewer {
+        height: 350px;
+    }
+}
+
+@media (max-width: 500px) {
+    .repair-page {
+        padding: 18px;
+    }
+
+    .page-heading h1 {
+        font-size: 24px;
+    }
+
+    .engine-controls button {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
