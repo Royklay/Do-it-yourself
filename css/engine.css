@@ -100,3 +100,54 @@ body {
     color: #b8c9e8;
     font-size: 15px;
 }
+
+/* Main Repair Layout */
+.repair-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 25px;
+    align-items: stretch;
+}
+
+/* Engine Section */
+.engine-section {
+    background: #0b2042;
+    border: 1px solid #193d70;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 110, 255, 0.12);
+}
+
+/* 3D Engine Viewer */
+#engine-viewer {
+    width: 100%;
+    height: 450px;
+    background: radial-gradient(circle, #102e5c, #06152e);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #1b4780;
+}
+
+/* Engine Controls */
+.engine-controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+}
+
+.engine-controls button {
+    padding: 11px 16px;
+    border: 1px solid #2468c9;
+    border-radius: 8px;
+    background: #102c58;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.engine-controls button:hover {
+    background: #0866e9;
+    box-shadow: 0 0 12px rgba(0, 110, 255, 0.5);
+}
