@@ -47,3 +47,20 @@ controls.dampingFactor = 0.05;
 
 // Load the engine model
 const loader = new GLTFLoader();
+
+// Show a loading message
+const loadingMessage = document.createElement("p");
+loadingMessage.textContent = "Loading 3D engine...";
+loadingMessage.style.position = "absolute";
+loadingMessage.style.top = "50%";
+loadingMessage.style.left = "50%";
+loadingMessage.style.transform = "translate(-50%, -50%)";
+loadingMessage.style.color = "white";
+loadingMessage.style.zIndex = "2";
+viewer.style.position = "relative";
+viewer.appendChild(loadingMessage);
+
+loader.load(
+    "models/engine.glb",
+
+    function (gltf) {
