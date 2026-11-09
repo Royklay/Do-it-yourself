@@ -50,6 +50,58 @@ let engine = null;
 let selectedMarker = null;
 let markerParts = {};
 
+//four engine problems
+const problems = {
+
+    overheating: {
+        keywords: ["overheating", "hot", "temperature", "coolant", "radiator"],
+
+        title: "Engine Overheating",
+
+        causes: "Low coolant, a coolant leak or a faulty cooling fan.",
+
+        steps: "1. Switch off the engine and let it cool completely. 2. Check the coolant level in the reservoir. 3. Look for visible leaks. 4. If it keeps overheating, visit a mechanic. Never open a hot radiator cap.",
+
+        marker: "cooling"
+    },
+
+    battery: {
+        keywords: ["battery", "charging", "alternator", "charge", "battery light"],
+
+        title: "Battery Not Charging",
+
+        causes: "A faulty alternator, loose wiring or a damaged alternator belt.",
+
+        steps: "1. Switch off the engine. 2. Check for visibly loose or damaged battery connections. 3. Look for a damaged or loose alternator belt without touching moving parts. 4. Have the charging system tested if the problem continues.",
+
+        marker: "alternator"
+    },
+
+    misfire: {
+        keywords: ["misfire", "misfiring", "shaking", "rough idle", "spark plug", "spark plugs"],
+
+        title: "Engine Misfiring",
+
+        causes: "Worn spark plugs, a loose ignition coil connection or an ignition problem.",
+
+        steps: "1. Switch off the engine and let it cool. 2. Look for visibly loose ignition coil connectors. 3. Check for damaged ignition wires if accessible. 4. Ask a mechanic to inspect the spark plugs if the engine continues shaking.",
+
+        marker: "spark"
+    },
+
+    starting: {
+        keywords: ["won't start", "wont start", "not starting", "no start", "starter", "clicking", "starting problem"],
+
+        title: "Engine Won't Start",
+
+        causes: "A weak battery, loose battery connections or a faulty starter motor.",
+
+        steps: "1. Check whether the dashboard lights come on. 2. With the engine off, look for loose battery connections. 3. Make sure the vehicle is in Park or Neutral. 4. If it still won't start, have the starter and battery tested.",
+
+        marker: "starter"
+    }
+
+};
 
 
 // Load the engine model
