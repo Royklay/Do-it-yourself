@@ -102,6 +102,16 @@ const problems = {
     }
 
 };
+// Glowing ring around the centre
+    const ring = new THREE.Mesh(
+        new THREE.TorusGeometry(radius * 1.8, radius * 0.12, 8, 32),
+        new THREE.MeshBasicMaterial({
+            color: color
+        })
+    );
+
+    marker.add(ring);
+
 
 
 // Load the engine model
