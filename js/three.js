@@ -38,3 +38,9 @@ scene.add(blueLight);
 
 const softLight = new THREE.AmbientLight(0xffffff, 1.5);
 scene.add(softLight);
+
+// Allow the user to rotate and zoom the engine
+const controls = new OrbitControls(camera, renderer.domElement);
+
+controls.enableDamping = true;
+controls.dampingFactor = 0.05;
