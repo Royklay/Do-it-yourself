@@ -23,3 +23,6 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize(viewer.clientWidth, viewer.clientHeight);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+// Put the 3D renderer inside our HTML viewer
+viewer.appendChild(renderer.domElement);
