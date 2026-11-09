@@ -13,3 +13,5 @@ searchInput.addEventListener("input", function() {
   let foundCategories = 0;
   // Check every category card
     categoryCards.forEach(function(card) {
+     // Get the category name and keywords
+        const categoryName = card.dataset.category;
