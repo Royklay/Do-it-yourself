@@ -76,3 +76,27 @@ body {
     background-color: #087cff;
     color: white;
 }
+
+/* Main Page */
+.repair-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 35px;
+    background: linear-gradient(135deg, #06152e, #0a1d3d);
+}
+
+/* Page Heading */
+.page-heading {
+    margin-bottom: 25px;
+}
+
+.page-heading h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.page-heading p {
+    color: #b8c9e8;
+    font-size: 15px;
+}
