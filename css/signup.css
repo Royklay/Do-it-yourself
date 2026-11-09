@@ -170,3 +170,49 @@ body {
     margin-top: 15px;
     font-size: 14px;
 }
+
+/* Sign In link */
+.auth-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #b8c9e8;
+    font-size: 14px;
+}
+
+.auth-link a {
+    color: #54baff;
+    text-decoration: none;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile screen layout */
+@media (max-width: 750px) {
+
+    .auth-container {
+        flex-direction: column;
+        padding: 25px 15px;
+        gap: 20px;
+    }
+
+    .auth-image {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .auth-image i {
+        font-size: 55px;
+    }
+
+    .auth-image h1 {
+        font-size: 27px;
+    }
+
+    .auth-form {
+        width: 100%;
+        max-width: 420px;
+    }
+
+}
