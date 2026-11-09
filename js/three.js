@@ -68,7 +68,9 @@ loader.load(
         const engine = gltf.scene;
 // Add the engine to the 3D scene
         scene.add(engine);
-  // Find the size and centre of the engine
+// Find the size and centre of the engine
         const box = new THREE.Box3().setFromObject(engine);
         const center = box.getCenter(new THREE.Vector3());
         const sphere = box.getBoundingSphere(new THREE.Sphere());
+// Move the engine to the centre of the scene
+        engine.position.sub(center);
