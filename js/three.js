@@ -64,3 +64,5 @@ loader.load(
     "models/engine.glb",
 
     function (gltf) {
+// Get the engine model from the GLB file
+        const engine = gltf.scene;
