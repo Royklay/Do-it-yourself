@@ -40,7 +40,7 @@
         </nav>
     </header>
 
-<body>
+<>
       <main class="repair-page">
 
         <!-- Page Heading -->
@@ -72,5 +72,44 @@
                 </div>
 
             </div>
+
+     <!-- Problem Information Panel -->
+            <div class="problem-section">
+
+                <h2>Find an Engine Problem</h2>
+
+                <p>Describe the problem you're experiencing.</p>
+
+                <input
+                    type="text"
+                    id="problemSearch"
+                    placeholder="E.g. My engine is overheating..."
+                >
+
+                <button id="searchProblem">
+                    Search Problem
+                </button>
+
+                <div id="problemInformation">
+                    <h3>Possible Causes</h3>
+                    <p id="problemCause">
+                        Search for a problem to see possible causes.
+                    </p>
+
+                    <h3>Steps to Fix</h3>
+                    <p id="problemSteps">
+                        Repair instructions will appear here.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Our 3D JavaScript -->
+    <script type="module" src="js/three.js"></script>
+
 </body>
 </html>
