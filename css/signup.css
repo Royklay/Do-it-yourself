@@ -164,3 +164,9 @@ body {
 .auth-form button:hover {
     background: #168cff;
 }
+
+/* Message displayed by JavaScript */
+#signupMessage {
+    margin-top: 15px;
+    font-size: 14px;
+}
