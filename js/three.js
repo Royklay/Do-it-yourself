@@ -136,3 +136,10 @@ document.getElementById("rotateBtn").addEventListener("click", function () {
     controls.autoRotate = isRotating;
 
 });
+// Zoom in button
+document.getElementById("zoomInBtn").addEventListener("click", function () {
+
+    camera.position.multiplyScalar(0.8);
+    controls.update();
+
+});
