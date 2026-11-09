@@ -42,3 +42,17 @@ searchInput.addEventListener("input", function() {
 
 });
 
+// Clear Search
+clearSearch.addEventListener("click", function() {
+
+    searchInput.value = "";
+
+    categoryCards.forEach(function(card) {
+
+        card.style.display = "block";
+
+    });
+
+    noResults.style.display = "none";
+
+});
