@@ -74,3 +74,17 @@ loader.load(
         const sphere = box.getBoundingSphere(new THREE.Sphere());
 // Move the engine to the centre of the scene
         engine.position.sub(center);
+ // Position the camera so the whole engine is visible
+        const distance = sphere.radius / Math.sin(
+            THREE.MathUtils.degToRad(camera.fov / 2)
+        );
+
+        camera.position.set(
+            distance * 1.5,
+            distance * 0.8,
+            distance * 1.5
+        );
+
+        camera.near = Math.max(0.01, sphere.radius / 100);
+        camera.far = distance * 10;
+        camera.updateProjectionMatrix();
