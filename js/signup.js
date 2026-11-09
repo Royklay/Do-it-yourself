@@ -23,3 +23,9 @@ signupForm.addEventListener("submit", function (event) {
         signupMessage.textContent = "An account already exists. Please Sign In.";
         return;
     }
+  // Put the user's details into an object
+    const user = {
+        fullName: fullName,
+        email: email,
+        password: password
+    };
