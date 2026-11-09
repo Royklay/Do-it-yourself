@@ -45,6 +45,13 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.dampingFactor = 0.05;
 
+// Variables for the engine and glowing marker
+let engine = null;
+let selectedMarker = null;
+let markerParts = {};
+
+
+
 // Load the engine model
 const loader = new GLTFLoader();
 
