@@ -29,3 +29,9 @@ signupForm.addEventListener("submit", function (event) {
         email: email,
         password: password
     };
+  // Put the user's details into an object
+    const user = {
+        fullName: fullName,
+        email: email,
+        password: password
+    };
