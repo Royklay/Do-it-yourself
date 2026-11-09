@@ -11,3 +11,8 @@ signupForm.addEventListener("submit", function (event) {
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirmPassword").value;
+  // Check whether the two passwords match
+    if (password !== confirmPassword) {
+        signupMessage.textContent = "Passwords do not match!";
+        return;
+    }
