@@ -93,3 +93,18 @@ loader.load(
         controls.minDistance = sphere.radius * 0.8;
         controls.maxDistance = distance * 4;
         controls.update();
+  // Find the separate parts of the engine
+        console.log("Engine parts:");
+
+        engine.traverse(function (part) {
+
+            if (part.isMesh) {
+
+                console.log(part.name);
+
+                part.castShadow = true;
+                part.receiveShadow = true;
+
+            }
+
+        });
