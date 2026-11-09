@@ -16,3 +16,10 @@ signupForm.addEventListener("submit", function (event) {
         signupMessage.textContent = "Passwords do not match!";
         return;
     }
+  // Check whether an account has already been registered
+    const existingUser = localStorage.getItem("fixitUser");
+
+    if (existingUser) {
+        signupMessage.textContent = "An account already exists. Please Sign In.";
+        return;
+    }
