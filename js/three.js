@@ -88,3 +88,8 @@ loader.load(
         camera.near = Math.max(0.01, sphere.radius / 100);
         camera.far = distance * 10;
         camera.updateProjectionMatrix();
+ // Set the rotation and zoom target
+        controls.target.set(0, 0, 0);
+        controls.minDistance = sphere.radius * 0.8;
+        controls.maxDistance = distance * 4;
+        controls.update();
