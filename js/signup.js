@@ -31,3 +31,5 @@ signupForm.addEventListener("submit", function (event) {
     };
  // Save the user's details in the browser
     localStorage.setItem("fixitUser", JSON.stringify(user));
+// Display a success message
+    signupMessage.textContent = "Account created successfully! Redirecting to Sign In...";
