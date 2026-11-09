@@ -129,3 +129,20 @@ body {
     font-size: 14px;
     margin-bottom: 25px;
 }
+
+/* Form input fields */
+.auth-form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 16px;
+    background: #071831;
+    border: 1px solid #28518a;
+    border-radius: 7px;
+    color: white;
+    outline: none;
+    font-size: 14px;
+}
+
+.auth-form input:focus {
+    border-color: #168cff;
+}
