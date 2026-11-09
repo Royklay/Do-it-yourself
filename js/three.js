@@ -150,3 +150,12 @@ document.getElementById("zoomOutBtn").addEventListener("click", function () {
     controls.update();
 
 });
+// Keep the 3D viewer fitting the screen
+window.addEventListener("resize", function () {
+
+    camera.aspect = viewer.clientWidth / viewer.clientHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize(viewer.clientWidth, viewer.clientHeight);
+
+});
