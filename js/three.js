@@ -26,3 +26,15 @@ renderer.outputColorSpace = THREE.SRGBColorSpace;
 
 // Put the 3D renderer inside our HTML viewer
 viewer.appendChild(renderer.domElement);
+
+// Add lighting to the engine
+const mainLight = new THREE.DirectionalLight(0xffffff, 3);
+mainLight.position.set(5, 8, 5);
+scene.add(mainLight);
+
+const blueLight = new THREE.PointLight(0x168cff, 25);
+blueLight.position.set(-5, 2, -4);
+scene.add(blueLight);
+
+const softLight = new THREE.AmbientLight(0xffffff, 1.5);
+scene.add(softLight);
