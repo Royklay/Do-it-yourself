@@ -126,3 +126,13 @@ loader.load(
 
     }
 );
+
+// Rotate button
+let isRotating = false;
+
+document.getElementById("rotateBtn").addEventListener("click", function () {
+
+    isRotating = !isRotating;
+    controls.autoRotate = isRotating;
+
+});
