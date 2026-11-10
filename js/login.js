@@ -29,7 +29,7 @@ loginForm.addEventListener("submit", function(event) {
     }
 
     // Display a confirmation message
-    message.textContent = "Form submitted successfully! Authentication will be added later.";
+    message.textContent = "Form submitted successfully!";
     message.style.color = "#4ade80";
 
 });
