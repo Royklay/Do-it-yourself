@@ -182,6 +182,88 @@ body {
     line-height: 1.6;
 }
 
+/* Footer */
+.footer {
+    background-color: #030d20;
+    padding: 50px 7% 20px;
+    border-top: 1px solid #172b4c;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+    padding-bottom: 35px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.footer-logo {
+    color: white;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.footer-logo i {
+    color: #1685ff;
+}
+
+.footer-section p {
+    color: #aebbd0;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+
+.footer-section a {
+    color: #aebbd0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section a:hover {
+    color: #1685ff;
+}
+
+.footer-section p i {
+    color: #1685ff;
+    margin-right: 8px;
+}
+
+.social-links {
+    display: flex;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.social-links i {
+    font-size: 23px;
+    color: #1685ff;
+}
+
+.social-links a:hover i {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid #172b4c;
+    text-align: center;
+    padding-top: 20px;
+    color: #8293ad;
+    font-size: 13px;
+}
+
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .about-content h1 {
