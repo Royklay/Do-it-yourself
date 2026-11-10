@@ -76,3 +76,145 @@ body {
     background-color: #087cff;
     color: white;
 }
+
+/* Sign In Page */
+.login-section {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: #071426;
+}
+
+/* Main login card */
+.login-container {
+    width: 100%;
+    max-width: 430px;
+    padding: 35px;
+    background: #10243d;
+    border: 1px solid #1d4165;
+    border-radius: 15px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+}
+
+/* User icon at the top */
+.login-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #087cf0;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+/* Heading and description */
+.login-container h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.login-container > p {
+    color: #a9bdd2;
+    margin-bottom: 25px;
+}
+
+/* Input sections */
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #dce9f7;
+}
+
+/* Input box containing the icon and input */
+.input-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: #071a30;
+    border: 1px solid #315273;
+    border-radius: 8px;
+}
+
+.input-box i {
+    color: #1688ff;
+}
+
+.input-box input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+}
+
+.input-box input::placeholder {
+    color: #8298ae;
+}
+
+/* Sign In button */
+.login-btn {
+    width: 100%;
+    padding: 13px;
+    margin-top: 10px;
+    background: #087cf0;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #0064c7;
+    transform: translateY(-2px);
+}
+
+/* Message displayed by JavaScript */
+#message {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Link to Get Started */
+.login-container .signup-link {
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #39a0ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile screen adjustments */
+@media (max-width: 500px) {
+    .login-container {
+        padding: 25px 20px;
+    }
+
+    .login-container h1 {
+        font-size: 24px;
+    }
+}
