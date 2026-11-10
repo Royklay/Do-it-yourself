@@ -198,13 +198,13 @@ body {
     font-size: 14px;
 }
 
-.signup-link a {
+.signin-link a {
     color: #39a0ff;
     text-decoration: none;
     font-weight: bold;
 }
 
-.signup-link a:hover {
+.signin-link a:hover {
     text-decoration: underline;
 }
 
