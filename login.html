@@ -50,6 +50,44 @@
             <h1>Welcome Back</h1>
 
             <p>Sign in to continue fixing things yourself.</p>
+
+  <!-- Sign In Form -->
+            <form id="loginForm">
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-box">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email"
+                            placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="input-box">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="password"
+                            placeholder="Enter your password" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="login-btn">
+                    Sign In <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <p id="message"></p>
+
+            </form>
+
+            <p class="signup-link">
+                Don't have an account?
+                <a href="signup.html">Get Started</a>
+            </p>
+
+        </div>
+
+    </main>
     
 </body>
 </html>
