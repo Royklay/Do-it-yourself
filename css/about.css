@@ -76,3 +76,123 @@ body {
     background-color: #087cff;
     color: white;
 }
+
+/* Main About Section */
+.about-section {
+    background: #071426;
+    color: white;
+    padding: 70px 8%;
+}
+
+/* About introduction */
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-label {
+    color: #1688ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.about-content h1 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.about-content h1 span {
+    color: #1688ff;
+}
+
+.about-content p {
+    color: #b4c5d8;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Mission Section */
+.mission-section {
+    max-width: 750px;
+    margin: 65px auto;
+    padding: 35px;
+    background: #10243d;
+    border: 1px solid #1d4165;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.mission-icon {
+    font-size: 35px;
+    color: #1688ff;
+    margin-bottom: 15px;
+}
+
+.mission-section h2,
+.offer-section h2 {
+    margin-bottom: 15px;
+}
+
+.mission-section p {
+    color: #b4c5d8;
+    line-height: 1.8;
+}
+
+/* What We Offer */
+.offer-section {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.offer-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.offer-card {
+    padding: 30px 20px;
+    background: #10243d;
+    border: 1px solid #1d4165;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    border-color: #1688ff;
+}
+
+.offer-card i {
+    color: #1688ff;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.offer-card h3 {
+    margin-bottom: 12px;
+}
+
+.offer-card p {
+    color: #b4c5d8;
+    line-height: 1.6;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .about-content h1 {
+        font-size: 30px;
+    }
+
+    .offer-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-section {
+        padding: 25px 20px;
+    }
+}
