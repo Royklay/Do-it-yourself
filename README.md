@@ -2,7 +2,7 @@
 
 ## About the Project
 
-FixItYourself is a simple DIY repair guide website that helps users understand and solve common problems with everyday devices and equipment.
+DoItYourself is a simple DIY repair guide website that helps users understand and solve common problems with everyday devices and equipment.
 
 The goal of the project is to help people handle minor repairs themselves instead of spending money on problems they can fix at home.
 
