@@ -130,4 +130,25 @@ body {
     padding: 15px;
     background: #eaf5ff;
     border-radius: 8px;
+    color: black;
+}
+
+
+
+/* Fix text visibility inside repair cards */
+.repair-card {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.repair-card h2 {
+    color: #1769aa;
+}
+
+.repair-card p,
+.repair-card li,
+.repair-card strong {
+    color: #333333;
+    visibility: visible;
+    opacity: 1;
 }
